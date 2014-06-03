@@ -38,60 +38,60 @@ class PluginProwl extends ServicePlugin
     function getVariables()
     {
         $variables = array(
-            /*T*/'Plugin Name'/*/T*/   => array(
+            lang('Plugin Name')   => array(
                 'type'          => 'hidden',
-                'description'   => /*T*/''/*/T*/,
-                'value'         => /*T*/'Prowl Push Notifications'/*/T*/,
+                'description'   => '',
+                'value'         => lang('Prowl Push Notifications'),
             ),
-            /*T*/'Enabled'/*/T*/       => array(
+            lang('Enabled')       => array(
                 'type'          => 'yesno',
-                'description'   => /*T*/'When enabled, this service plugin pushes certain notifications from ClientExec to the Prowl application on your iPhone. Please note, Curl with SSL is required to use the Prowl service. <b>This service requires the Paid iPhone application Prowl to work</b>'/*/T*/,
+                'description'   => lang('When enabled, this service plugin pushes certain notifications from ClientExec to the Prowl application on your iPhone. Please note, Curl with SSL is required to use the Prowl service. <b>This service requires the Paid iPhone application Prowl to work</b>'),
                 'value'         => '0',
             ),
-            /*T*/'Prowl API Keys'/*/T*/  => array(
+            lang('Prowl API Keys')  => array(
                 'type'          => 'textarea',
-                'description'   => /*T*/'Enter the API key for your Prowl account (separate multiple keys with a comma)'/*/T*/,
+                'description'   => lang('Enter the API key for your Prowl account (separate multiple keys with a comma)'),
                 'value'         => ''
             ),
-            /*T*/'Notify of New Orders'/*/T*/  => array(
+            lang('Notify of New Orders')  => array(
                 'type'          => 'yesno',
-                'description'   => /*T*/'Select Yes to be notified when a new order is placed.'/*/T*/,
+                'description'   => lang('Select Yes to be notified when a new order is placed.'),
                 'value'         => '1',
             ),
-            /*T*/'Notify of New High Priority Tickets'/*/T*/  => array(
+            lang('Notify of New High Priority Tickets')  => array(
                 'type'          => 'yesno',
-                'description'   => /*T*/'Select Yes to be notified when a new High Priority Ticket is recieved.'/*/T*/,
+                'description'   => lang('Select Yes to be notified when a new High Priority Ticket is recieved.'),
                 'value'         => '1',
             ),
-            /*T*/'Run schedule - Minute'/*/T*/  => array(
+            lang('Run schedule - Minute')  => array(
                 'type'          => 'text',
-                'description'   => /*T*/'Enter number, range, list or steps'/*/T*/,
+                'description'   => lang('Enter number, range, list or steps'),
                 'value'         => '5',
                 'helpid'        => '8',
             ),
-            /*T*/'Run schedule - Hour'/*/T*/  => array(
+            lang('Run schedule - Hour')  => array(
                 'type'          => 'text',
-                'description'   => /*T*/'Enter number, range, list or steps'/*/T*/,
+                'description'   => lang('Enter number, range, list or steps'),
                 'value'         => '*',
             ),
-            /*T*/'Run schedule - Day'/*/T*/  => array(
+            lang('Run schedule - Day')  => array(
                 'type'          => 'text',
-                'description'   => /*T*/'Enter number, range, list or steps'/*/T*/,
+                'description'   => lang('Enter number, range, list or steps'),
                 'value'         => '*',
             ),
-            /*T*/'Run schedule - Month'/*/T*/  => array(
+            lang('Run schedule - Month')  => array(
                 'type'          => 'text',
-                'description'   => /*T*/'Enter number, range, list or steps'/*/T*/,
+                'description'   => lang('Enter number, range, list or steps'),
                 'value'         => '*',
             ),
-            /*T*/'Run schedule - Day of the week'/*/T*/  => array(
+            lang('Run schedule - Day of the week')  => array(
                 'type'          => 'text',
-                'description'   => /*T*/'Enter number in range 0-6 (0 is Sunday) or a 3 letter shortcut (e.g. sun)'/*/T*/,
+                'description'   => lang('Enter number in range 0-6 (0 is Sunday) or a 3 letter shortcut (e.g. sun)'),
                 'value'         => '*',
             ),
-            /*T*/'LastRun'/*/T*/  => array(
+            lang('LastRun')  => array(
                 'type'          => 'hidden',
-                'description'   => /*T*/'Timestamp of last run. Used to determine new items to push'/*/T*/,
+                'description'   => lang('Timestamp of last run. Used to determine new items to push'),
                 'value'         => ''
             ),
         );
