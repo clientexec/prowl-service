@@ -60,7 +60,7 @@ class PluginProwl extends ServicePlugin
             ),
             lang('Notify of New High Priority Tickets')  => array(
                 'type'          => 'yesno',
-                'description'   => lang('Select Yes to be notified when a new High Priority Ticket is recieved.'),
+                'description'   => lang('Select Yes to be notified when a new High Priority Ticket is received.'),
                 'value'         => '1',
             ),
             lang('Run schedule - Minute')  => array(
@@ -182,7 +182,7 @@ class PluginProwl extends ServicePlugin
             $result = $this->db->query($query);
             while ($row = $result->fetch()) {
 
-                $this->notifications[] = array('event' => 'New Order', 'description' => "A new order has been recieved #".$row['id']);
+                $this->notifications[] = array('event' => 'New Order', 'description' => "A new order has been received #".$row['id']);
             }
         }
     }
